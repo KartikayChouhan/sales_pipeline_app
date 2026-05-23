@@ -513,7 +513,7 @@ if uploaded_file is not None:
 
     st.markdown("<div class='section-header'>Raw Data Preview</div>",
                 unsafe_allow_html=True)
-    st.dataframe(raw_df.head(10), use_container_width=True)
+    st.dataframe(raw_df.head(10), width='stretch')
 
     st.markdown("<hr>", unsafe_allow_html=True)
 
@@ -586,27 +586,27 @@ if uploaded_file is not None:
     col1, col2 = st.columns(2)
 
     with col1:
-        st.image(chart_monthly_revenue(df_clean), use_container_width=True)
+        st.image(chart_monthly_revenue(df_clean), width='stretch')
     with col2:
-        st.image(chart_revenue_by_country(df_clean), use_container_width=True)
+        st.image(chart_revenue_by_country(df_clean), width='stretch')
 
     col3, col4 = st.columns(2)
     with col3:
-        st.image(chart_top_products(df_clean), use_container_width=True)
+        st.image(chart_top_products(df_clean), width='stretch')
     with col4:
-        st.image(chart_most_returned(df_clean), use_container_width=True)
+        st.image(chart_most_returned(df_clean), width='stretch')
 
     col5, col6 = st.columns(2)
     with col5:
-        st.image(chart_monthly_returns(df_clean), use_container_width=True)
+        st.image(chart_monthly_returns(df_clean), width='stretch')
     with col6:
-        st.image(chart_revenue_by_type(df_clean), use_container_width=True)
+        st.image(chart_revenue_by_type(df_clean), width='stretch')
 
     col7, col8 = st.columns(2)
     with col7:
-        st.image(chart_transaction_distribution(df_clean), use_container_width=True)
+        st.image(chart_transaction_distribution(df_clean), width='stretch')
     with col8:
-        st.image(chart_anomaly_distribution(df_clean), use_container_width=True)
+        st.image(chart_anomaly_distribution(df_clean), width='stretch')
 
     # ── DOWNLOADS ──────────────────────────────────────────────────────────────
     st.markdown("<div class='section-header'>Download Outputs</div>",
