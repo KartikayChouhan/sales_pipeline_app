@@ -517,6 +517,12 @@ if uploaded_file is not None:
 
     st.markdown("<hr>", unsafe_allow_html=True)
 
+    # ROW LIMIT FOR CLOUD DEPLOYMENT
+    MAX_ROWS = 50000
+    if len(raw_df) > MAX_ROWS:
+        st.warning(f"Your file has {len(raw_df):,} rows. This app processes up to {MAX_ROWS:,} rows on the free cloud tier. Showing results for the first {MAX_ROWS:,} rows.")
+        raw_df = raw_df.head(MAX_ROWS)
+
     # RUN PIPELINE
     logger, log_stream = get_stream_logger()
 
