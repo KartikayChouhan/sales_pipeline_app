@@ -20,14 +20,6 @@ Upload a raw retail invoice CSV and the pipeline automatically:
 
 ---
 
-## Screenshots
-
-> Upload your file and the full pipeline runs automatically
-
-![Pipeline Demo](https://i.imgur.com/placeholder.png)
-
----
-
 ## Dataset Format
 
 This pipeline is designed for retail invoice data with the following columns:
