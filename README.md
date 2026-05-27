@@ -98,4 +98,4 @@ Rows with unparseable dates are not deleted. If they have valid quantity and pri
 
 ---
 
-*Built as a final year B.Tech CSE project — Kartikay Chouhan*
+
